@@ -20,6 +20,7 @@ defmodule Portal do
 
   defstruct[:left, :right]
   @doc """
+  Create struct to store the portal data.
   Starts transfering `data` from `left` to `right`.
   """
 
