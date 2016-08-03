@@ -1,8 +1,7 @@
 defmodule Portal.Door do
 	@doc """
 	In Elixir, code is defined inside of Modules, a group of functions.
-	"""
-	@doc """
+	
 	Starts a door with the given `color`.
 
 	The color is given as a name so we can identify

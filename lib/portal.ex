@@ -18,17 +18,16 @@ defmodule Portal do
     Supervisor.start_link(children, opts)
   end
 
-  defstruct[:left, :right]
+  defstruct [:left, :right]
   @doc """
   Create struct to store the portal data.
   Starts transfering `data` from `left` to `right`.
   """
 
-    def transfer(left, right, data) do
-      #First add all the data to the portal on the left
-      for item <- data do
-        Portal.Door.push(left, item)
-      end
+  def transfer(left, right, data) do
+    #First add all the data to the portal on the left
+    for item <- data do
+      Portal.Door.push(left, item)
     end
 
     #Returns a portal struct we will use next
@@ -49,5 +48,6 @@ defmodule Portal do
     # Return the portal itself
     portal
   end
-
 end
+
+
